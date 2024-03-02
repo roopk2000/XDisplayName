@@ -17,6 +17,7 @@ const Form = () => {
 
   return (
     <div className="form-container">
+      <h2>Full Name Display</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="firstName">First Name:</label>
         <input
@@ -24,6 +25,7 @@ const Form = () => {
           id="firstName"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
+          placeholder="Enter your first name"
         />
         <label htmlFor="lastName">Last Name:</label>
         <input
@@ -31,6 +33,7 @@ const Form = () => {
           id="lastName"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
+          placeholder="Enter your last name"
         />
         <button type="submit">Submit</button>
       </form>
